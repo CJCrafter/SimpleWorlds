@@ -1,0 +1,4 @@
+# Worlds in this list will be loaded by SimpleWorlds during the server enabling
+# phase. You do not need to put your default worlds ("world", "world_nether", and
+# "world_the_end" on this list).
+Load_Worlds: []
