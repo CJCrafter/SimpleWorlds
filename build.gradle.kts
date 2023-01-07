@@ -1,7 +1,7 @@
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
 group = "me.cjcrafter"
-version = "1.0.1"
+version = "1.0.2"
 
 plugins {
     `java-library`
@@ -47,7 +47,6 @@ dependencies {
 }
 
 tasks.named<ShadowJar>("shadowJar") {
-    classifier = null
     archiveFileName.set("SimpleWorlds-${project.version}.jar")
     configurations = listOf(project.configurations["shadeOnly"], project.configurations["runtimeClasspath"])
 

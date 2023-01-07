@@ -14,7 +14,7 @@ public class SimpleWorlds extends JavaPlugin {
     private List<String> loadWorlds;
 
     @Override
-    public void onEnable() {
+    public void onLoad() {
         INSTANCE = this;
 
         if (!getDataFolder().exists() || getDataFolder().listFiles() == null || getDataFolder().listFiles().length == 0) {
